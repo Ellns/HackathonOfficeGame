@@ -378,7 +378,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3582597427715083455, guid: 63497aad8fe9e5a48a714ebda887e9ac, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.577
+      value: 0.192
       objectReference: {fileID: 0}
     - target: {fileID: 3582597427715083455, guid: 63497aad8fe9e5a48a714ebda887e9ac, type: 3}
       propertyPath: m_LocalPosition.y
@@ -429,6 +429,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4938495882526505376, guid: 7e9d53933a5a1ad4d90eaa9a78a374f1, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6603384408792370135, guid: 7e9d53933a5a1ad4d90eaa9a78a374f1, type: 3}
       propertyPath: m_Name
       value: Trashcan
@@ -478,7 +482,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3003592087946562688, guid: 7e9d53933a5a1ad4d90eaa9a78a374f1, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e9d53933a5a1ad4d90eaa9a78a374f1, type: 3}
