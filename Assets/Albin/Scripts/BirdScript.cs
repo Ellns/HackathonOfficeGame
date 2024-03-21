@@ -10,6 +10,7 @@ public class BirdScript : MonoBehaviour
     public float gravity = -9.8f;
     public float strength = 5f;
     public bool losestate = false;
+    public int score = 0;
     
 
     // Start is called before the first frame update
@@ -38,6 +39,15 @@ public class BirdScript : MonoBehaviour
             losestate = true;
             Debug.Log("you lose");
         }
+
+        if (other.tag == "Score")
+        {
+            score += 1;
+            Debug.Log("added score");
+        }
     }
+
+   
+
 
 }
