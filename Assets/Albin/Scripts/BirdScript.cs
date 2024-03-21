@@ -9,6 +9,8 @@ public class BirdScript : MonoBehaviour
     private Vector3 direction;
     public float gravity = -9.8f;
     public float strength = 5f;
+    public bool losestate = false;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +31,13 @@ public class BirdScript : MonoBehaviour
         transform.position += direction * Time.deltaTime;
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Wall")
+        {
+            losestate = true;
+            Debug.Log("you lose");
+        }
+    }
 
-    
 }
