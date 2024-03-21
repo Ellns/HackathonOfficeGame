@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: Honk-Regular SDF 1
   m_EditorClassIdentifier: 
-  hashCode: 0
+  hashCode: -768649675
   material: {fileID: 9203301274820424804}
-  materialHashCode: 0
+  materialHashCode: 1072247797
   m_Version: 1.1.0
   m_SourceFontFileGUID: 22d1d0735681c1647a041e6c4d70d178
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: 22d1d0735681c1647a041e6c4d70d178, type: 3}

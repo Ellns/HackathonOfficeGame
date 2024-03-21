@@ -10,7 +10,8 @@ TrueTypeFontImporter:
   includeFontData: 1
   fontNames:
   - Honk
-  fallbackFontReferences: []
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 81f68720979dd494f8e6a39580978bd0, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1
