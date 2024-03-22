@@ -3711,6 +3711,7 @@ GameObject:
   - component: {fileID: 310198181}
   - component: {fileID: 310198180}
   - component: {fileID: 310198182}
+  - component: {fileID: 310198184}
   m_Layer: 0
   m_Name: '[BuildingBlock] Right Poke'
   m_TagString: Untagged
@@ -3800,6 +3801,21 @@ MonoBehaviour:
   blockId: f61a01e5-61c7-4589-bd2d-107bccae8f02
   instanceId: cc45529b-ff6c-4bec-9903-2cd454e3b36f
   version: 1
+--- !u!114 &310198184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 310198178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b740bb2e35294494f9eeddeba5e8fb8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _worldText: {fileID: 1387567336}
+  _height: 1.8
+  _calibrateOnStartup: 1
 --- !u!1 &313122558
 GameObject:
   m_ObjectHideFlags: 0
@@ -9432,7 +9448,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1973960688}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &948055782
 GameObject:
@@ -9544,6 +9560,9 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 333059631}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2558818634079438112, guid: 7825e89535666da48ad528f3f49b3104, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1328976795}
     - targetCorrespondingSourceObject: {fileID: 2558818633868960494, guid: 7825e89535666da48ad528f3f49b3104, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
@@ -11263,7 +11282,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _worldText: {fileID: 0}
   _height: 1.8
-  _calibrateOnStartup: 0
+  _calibrateOnStartup: 1
 --- !u!1 &1136240269
 GameObject:
   m_ObjectHideFlags: 0
@@ -12597,6 +12616,7 @@ GameObject:
   - component: {fileID: 1320396595}
   - component: {fileID: 1320396596}
   - component: {fileID: 1320396597}
+  - component: {fileID: 1320396598}
   m_Layer: 0
   m_Name: LeftHand
   m_TagString: Untagged
@@ -12655,6 +12675,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hand: {fileID: 1320396596}
+--- !u!114 &1320396598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1320396594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b740bb2e35294494f9eeddeba5e8fb8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _worldText: {fileID: 0}
+  _height: 1.8
+  _calibrateOnStartup: 0
 --- !u!1 &1321453088
 GameObject:
   m_ObjectHideFlags: 0
@@ -12717,6 +12752,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 75815058}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1328976793 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2558818634079438112, guid: 7825e89535666da48ad528f3f49b3104, type: 3}
+  m_PrefabInstance: {fileID: 949897871}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1328976795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328976793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b740bb2e35294494f9eeddeba5e8fb8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _worldText: {fileID: 0}
+  _height: 1.8
+  _calibrateOnStartup: 0
 --- !u!1 &1344079405
 GameObject:
   m_ObjectHideFlags: 0
@@ -12820,6 +12875,7 @@ GameObject:
   - component: {fileID: 1350708555}
   - component: {fileID: 1350708556}
   - component: {fileID: 1350708557}
+  - component: {fileID: 1350708558}
   m_Layer: 0
   m_Name: RightHand
   m_TagString: Untagged
@@ -12878,6 +12934,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hand: {fileID: 1350708556}
+--- !u!114 &1350708558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350708554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b740bb2e35294494f9eeddeba5e8fb8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _worldText: {fileID: 0}
+  _height: 1.8
+  _calibrateOnStartup: 0
 --- !u!1 &1357176503
 GameObject:
   m_ObjectHideFlags: 0
@@ -13192,6 +13263,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1990682564}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1387567336 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1691210736225947998, guid: 7825e89535666da48ad528f3f49b3104, type: 3}
+  m_PrefabInstance: {fileID: 949897871}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1388596884
 GameObject:
   m_ObjectHideFlags: 0
@@ -16039,6 +16121,7 @@ GameObject:
   - component: {fileID: 1666698611}
   - component: {fileID: 1666698610}
   - component: {fileID: 1666698612}
+  - component: {fileID: 1666698614}
   m_Layer: 0
   m_Name: '[BuildingBlock] Left Poke'
   m_TagString: Untagged
@@ -16128,6 +16211,21 @@ MonoBehaviour:
   blockId: f61a01e5-61c7-4589-bd2d-107bccae8f02
   instanceId: 56962723-d1e6-4c17-91eb-10765441e28d
   version: 1
+--- !u!114 &1666698614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666698608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b740bb2e35294494f9eeddeba5e8fb8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _worldText: {fileID: 1387567336}
+  _height: 1.8
+  _calibrateOnStartup: 1
 --- !u!1 &1668109982
 GameObject:
   m_ObjectHideFlags: 0
@@ -19726,6 +19824,7 @@ Transform:
   m_Children:
   - {fileID: 2087246892}
   - {fileID: 1097888175}
+  - {fileID: 947888677}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1980887743
@@ -21045,7 +21144,6 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 947888677}
   - {fileID: 1973960688}
   - {fileID: 949897871}
   - {fileID: 800746161}
