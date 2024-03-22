@@ -20,8 +20,7 @@ public class PipeMovement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.name.ToString());
-        //Destroy(this.gameObject);
+      
        
         if (other.tag == "BackWall")
         {

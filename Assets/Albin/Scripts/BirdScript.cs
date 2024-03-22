@@ -10,13 +10,16 @@ public class BirdScript : MonoBehaviour
     public float gravity = -9.8f;
     public float strength = 5f;
     public bool losestate = false;
-    public float score = 0f;
-    
+    public Rigidbody birdRigid => birdObject.GetComponent<Rigidbody>();
+   
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        if(birdRigid == null)
+        {
+            Debug.Log("rigid is null");
+        }
     }
 
     // Update is called once per frame
@@ -25,7 +28,10 @@ public class BirdScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             direction = Vector3.up * strength;
-            Debug.Log("helloworld");
+          
+
+
+            
         }
 
         direction.y += gravity * Time.deltaTime;
@@ -36,18 +42,25 @@ public class BirdScript : MonoBehaviour
     {
         if (other.tag == "Wall")
         {
-            losestate = true;
-            Debug.Log("you lose");
+            BirdGameManager.manager.GameLose();
+            BirdGameManager.manager.isAlive = false;
+            ToggleGravity();
         }
 
-        if (other.tag == "Score")
+        if (other.tag == "score")
         {
-            score += 1;
-            Debug.Log("added score");
+            BirdGameManager.manager.IncrementScore();
         }
     }
 
-   
+   public void ToggleGravity()
+    {
+        birdRigid.useGravity = !birdRigid.useGravity;
+    }
 
+    public void ResetPosition()
+    {
+        birdObject.transform.position = BirdGameManager.manager.respawn.transform.position;
+    }
 
 }
