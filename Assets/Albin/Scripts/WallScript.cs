@@ -8,9 +8,9 @@ public class WallScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Bird")
+        if (other.tag == "Wall")
         {
-
+            Destroy(other.gameObject);
         }
     }
 }

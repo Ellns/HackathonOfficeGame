@@ -7,19 +7,23 @@ TagManager:
   - Bird
   - Wall
   - score
+  - ping pong
+  - SamplesInfoPanel
+  - trashcan
+  - BackWall
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - HiddenMesh
   - Water
   - UI
   - 
   - 
   - 
   - 
-  - 
-  - 
+  - Character
+  - MirroredCharacter
   - 
   - 
   - 

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    public GameObject prefab;
+    public GameObject[] prefab;
     public float spawnRate = 1f;
 
     private void OnEnable()
@@ -19,6 +19,7 @@ public class Spawner : MonoBehaviour
 
     private void Spawn()
     {
-        GameObject pipes = Instantiate(prefab, transform.position, Quaternion.identity);
+        //GameObject pipes = Instantiate(prefab, transform.position, Quaternion.identity);
+        Instantiate(prefab[UnityEngine.Random.Range(0, 3)], transform.position, Quaternion.identity);
     }
 }

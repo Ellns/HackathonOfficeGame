@@ -10,7 +10,7 @@ public class BirdScript : MonoBehaviour
     public float gravity = -9.8f;
     public float strength = 5f;
     public bool losestate = false;
-    public int score = 0;
+    public float score = 0f;
     
 
     // Start is called before the first frame update
