@@ -6,7 +6,6 @@ TagManager:
   tags:
   - Bird
   - Wall
-  - score
   layers:
   - Default
   - TransparentFX
