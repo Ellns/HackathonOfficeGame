@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Ellen/Mainmenu.unity.meta
 guid: 1667b955aaa82d74ca3d5a7b524b7c86
+DefaultImporter:
+========
+guid: cd0a9126e1f33b94781ae49ed20b486a
 PrefabImporter:
+>>>>>>>> main:Assets/Ellen/Paperball.prefab.meta
   externalObjects: {}
   userData: 
   assetBundleName: 
