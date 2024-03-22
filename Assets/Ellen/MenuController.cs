@@ -10,4 +10,11 @@ public class MenuController : MonoBehaviour
     {
         SceneManager.LoadScene("Sofia's scene");
     }
+
+    public void ExitButton()
+    {
+        
+        Application.Quit();
+
+    }
 }
