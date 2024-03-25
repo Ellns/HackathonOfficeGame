@@ -27,7 +27,7 @@ public class BirdScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space)) //this should be changed to an invisible button on the phone screen so you can just tap it and the bird jumps
         {
             BirdJump();
           
