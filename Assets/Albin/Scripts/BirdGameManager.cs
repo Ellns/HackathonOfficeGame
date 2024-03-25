@@ -46,8 +46,12 @@ public class BirdGameManager : MonoBehaviour
         score = 0;
         birdScript.ResetPosition();
         isAlive = true;
+        birdScript.GravityStart = true;
+        //birdScript.birdRigid.velocity = new Vector3(0, 0 ,0);
+        birdScript.BirdJump();
+        ToggleSpawner();
 
-        
+
     }
 
     public void ToggleSpawner()
