@@ -7,15 +7,17 @@ public class BirdScript : MonoBehaviour
 
     public GameObject birdObject;
     private Vector3 direction;
-    public float gravity = -9.8f;
-    public float strength = 5f;
+    public float gravity = -5f;
+    public float strength = 1.5f;
     public bool losestate = false;
     public Rigidbody birdRigid => birdObject.GetComponent<Rigidbody>();
+    public bool GravityStart;
    
 
     // Start is called before the first frame update
     void Start()
     {
+        GravityBird();
         if(birdRigid == null)
         {
             Debug.Log("rigid is null");
@@ -27,15 +29,30 @@ public class BirdScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            direction = Vector3.up * strength;
+            BirdJump();
           
 
 
             
         }
 
-        direction.y += gravity * Time.deltaTime;
-        transform.position += direction * Time.deltaTime;
+        if(GravityStart == true)
+        {
+            direction.y += gravity * Time.deltaTime;
+            transform.position += direction * Time.deltaTime;
+        }
+
+        
+    }
+
+    public void BirdJump()
+    {
+        direction = Vector3.up * strength;
+    }
+
+    public void GravityBird()
+    {
+        GravityStart = true;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -55,8 +72,12 @@ public class BirdScript : MonoBehaviour
 
    public void ToggleGravity()
     {
+
         birdRigid.useGravity = !birdRigid.useGravity;
+        GravityStart = false;
+
     }
+
 
     public void ResetPosition()
     {

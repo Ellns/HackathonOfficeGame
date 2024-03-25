@@ -11,6 +11,7 @@ TagManager:
   - SamplesInfoPanel
   - trashcan
   - BackWall
+  - PipeWall
   layers:
   - Default
   - TransparentFX
@@ -18,8 +19,8 @@ TagManager:
   - HiddenMesh
   - Water
   - UI
-  - 
-  - 
+  - cup
+  - pencil
   - 
   - 
   - Character

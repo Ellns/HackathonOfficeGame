@@ -6,6 +6,8 @@ public class PipeMovement : MonoBehaviour
 {
 
     public float speed = 5f;
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +18,11 @@ public class PipeMovement : MonoBehaviour
     void Update()
     {
         transform.position += Vector3.forward * speed * Time.deltaTime;
+        if(BirdGameManager.manager.DestroyWall == true)
+        {
+            Destroy(this.gameObject);
+            
+        }
     }
 
     private void OnTriggerEnter(Collider other)
