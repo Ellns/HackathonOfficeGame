@@ -44,7 +44,7 @@ public class BirdGameManager : MonoBehaviour
     {
         
         score = 0;
-        
+        birdScript.ResetPosition();
         isAlive = true;
 
         
@@ -60,6 +60,6 @@ public class BirdGameManager : MonoBehaviour
     {
         if (!isAlive) return;
         ToggleSpawner();
-        
+        birdScript.ToggleGravity();
     }
 }
