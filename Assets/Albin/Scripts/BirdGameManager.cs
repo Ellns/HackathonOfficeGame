@@ -14,6 +14,7 @@ public class BirdGameManager : MonoBehaviour
     public BirdScript birdScript;
     public bool DestroyWall = false;
     public TextMeshProUGUI scoreUI;
+    public TextMeshProUGUI gameOver;
 
     // Start is called before the first frame update
     void Awake()
@@ -26,6 +27,7 @@ public class BirdGameManager : MonoBehaviour
            
         }
         scoreUI.SetText("0");
+        gameOver.SetText("");
     }
 
     // Update is called once per frame
@@ -50,6 +52,7 @@ public class BirdGameManager : MonoBehaviour
 
         score = 0;
         scoreUI.SetText(score.ToString());
+        gameOver.SetText("");
         birdScript.ResetPosition();
         isAlive = true;
         birdScript.GravityStart = true;
@@ -73,5 +76,6 @@ public class BirdGameManager : MonoBehaviour
         ToggleSpawner();
         birdScript.ToggleGravity();
         DestroyWall = true;
+        gameOver.SetText("GAME OVER     tap to play again");
     }
 }
