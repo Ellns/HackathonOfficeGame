@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &61090647 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8befebfb7f68d9148be442d23e1f2e23, type: 3}
+  m_PrefabInstance: {fileID: 1201493811}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &72934806
 GameObject:
   m_ObjectHideFlags: 0
@@ -387,6 +392,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &606605737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61090647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a22c2a3ebee0949a109bb6ba80157d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0
+  respawn: {fileID: 2090970710}
+  bird: {fileID: 2089148043}
+  spawner: {fileID: 1235491483}
+  isAlive: 1
+  birdScript: {fileID: 0}
 --- !u!1001 &1201493811
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -461,7 +484,13 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8befebfb7f68d9148be442d23e1f2e23, type: 3}
       insertIndex: -1
       addedObject: {fileID: 168746933}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8befebfb7f68d9148be442d23e1f2e23, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2090970710}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8befebfb7f68d9148be442d23e1f2e23, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 606605737}
     - targetCorrespondingSourceObject: {fileID: 8164078558771037576, guid: 8befebfb7f68d9148be442d23e1f2e23, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1201493815}
@@ -711,7 +740,6 @@ MonoBehaviour:
   gravity: -5
   strength: 1.5
   losestate: 0
-  score: 0
 --- !u!54 &2089148048
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -854,6 +882,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &2090970709
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2090970710}
+  m_Layer: 0
+  m_Name: RespawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2090970710
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090970709}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.08, y: 0, z: 0.545}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1201493812}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2130378077
 GameObject:
   m_ObjectHideFlags: 0
