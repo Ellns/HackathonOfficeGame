@@ -13,6 +13,7 @@ public class KeyBoardFunction : MonoBehaviour
         {
             Missions.missions.Keyboard = true;
             workPoints += 1;
+            Missions.missions.updatePoints();
         }
 
     }

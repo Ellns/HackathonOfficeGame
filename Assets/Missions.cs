@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 using UnityEngine.SceneManagement;
 
@@ -12,9 +13,13 @@ public class Missions : MonoBehaviour
     public bool Folder = false;
     public float happiness = 100f;
     public static Missions missions;
-    public int workPoints;
+    public int workPoints = 0;
+    public TextMeshProUGUI workPointsUI;
 
-
+    private void Start()
+    {
+        updatePoints();
+    }
     private void Update()
     {
         if (Keyboard == false && Printer == false && Folder == false)
@@ -36,6 +41,11 @@ public class Missions : MonoBehaviour
         {
             Debug.Log("you win and everything works");
         }
+    }
+
+    public void updatePoints()
+    {
+        workPointsUI.SetText(workPoints.ToString());
     }
 
     public void jobDone()
