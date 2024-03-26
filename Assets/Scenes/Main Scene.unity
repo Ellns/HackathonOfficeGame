@@ -1086,7 +1086,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a4c279bdda1b7446b7b9f35a2d87167, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  workPoints: 0
   keysPressed: 0
   keynumber: {fileID: 1400318455}
 --- !u!65 &243876110
@@ -1451,27 +1450,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44a24301f26c19c439e5ce80e53d5228, type: 3}
---- !u!114 &286115063
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1894687363}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 997c874fff21f36439c8042000d99ccc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  workPoints: 0
-  yellowButton: {fileID: 0}
-  redButton: {fileID: 0}
-  greenButton: {fileID: 0}
-  yellowPress: 0
-  redPress: 0
-  greenPress: 0
-  paper: {fileID: 0}
-  destination: {fileID: 0}
 --- !u!4 &298736059 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2843745011146720971, guid: a82ab613de593e2439b710b4ce1813b9, type: 3}
@@ -6171,8 +6149,9 @@ MonoBehaviour:
   Printer: 0
   Folder: 0
   happiness: 100
-  workPoints: 0
+  workPoints: 3
   workPointsUI: {fileID: 1061364790}
+  playing: 0
 --- !u!4 &1614506638
 Transform:
   m_ObjectHideFlags: 0
@@ -7430,9 +7409,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7079612695331858313, guid: fdada56385bf1304cac3b236e2b2bed9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1894687370}
-    - targetCorrespondingSourceObject: {fileID: 3352586257819741031, guid: fdada56385bf1304cac3b236e2b2bed9, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 7079612695331858313, guid: fdada56385bf1304cac3b236e2b2bed9, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 286115063}
+      addedObject: {fileID: 1894687380}
     - targetCorrespondingSourceObject: {fileID: 8106488717008984737, guid: fdada56385bf1304cac3b236e2b2bed9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1894687372}
@@ -7523,7 +7502,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 997c874fff21f36439c8042000d99ccc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  workPoints: 0
   yellowButton: {fileID: 1894687363}
   redButton: {fileID: 1894687364}
   greenButton: {fileID: 1894687362}
@@ -7630,6 +7608,28 @@ MonoBehaviour:
   _whenSelectingInteractorViewRemoved:
     m_PersistentCalls:
       m_Calls: []
+--- !u!64 &1894687380
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1894687369}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -153830957423991239, guid: 004143ad9e8a4c744a2015f6c89fc3b1, type: 3}
 --- !u!4 &1901153892 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f789658bfee12104aab4ea7d4b85b373, type: 3}

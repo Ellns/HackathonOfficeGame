@@ -21,7 +21,7 @@ public class BinTrigger : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         glitter.Play();
-        Missions.missions.happiness += 5f;
+        Missions.missions.playing = true;
     }
 
 

@@ -41,6 +41,7 @@ public class BirdGameManager : MonoBehaviour
     {
         score++;
         scoreUI.SetText(score.ToString());
+        Missions.missions.playing = true;
       
         if (Missions.missions.happiness <= 100f)
         {
