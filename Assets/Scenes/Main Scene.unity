@@ -5449,6 +5449,55 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 004143ad9e8a4c744a2015f6c89fc3b1, type: 3}
   m_PrefabInstance: {fileID: 884565007}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1614506636
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1614506638}
+  - component: {fileID: 1614506637}
+  m_Layer: 0
+  m_Name: Missions
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1614506637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1614506636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 476f4b93549c9b74dbc9e5fd8c3aba96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Keyboard: 0
+  Printer: 0
+  Folder: 0
+  happiness: 100
+  workPoints: 0
+--- !u!4 &1614506638
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1614506636}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.6605006, y: 0.9161885, z: 0.3041241}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1644067253
 GameObject:
   m_ObjectHideFlags: 0
@@ -7917,3 +7966,4 @@ SceneRoots:
   - {fileID: 1894687359}
   - {fileID: 243876104}
   - {fileID: 842904268}
+  - {fileID: 1614506638}
