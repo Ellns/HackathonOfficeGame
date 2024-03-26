@@ -9,7 +9,7 @@ public class MenuController : MonoBehaviour
 
         public void StartButton()
         {
-            SceneManager.LoadScene("Main Scene");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
         public void ExitButton()
