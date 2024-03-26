@@ -10,25 +10,27 @@ using UnityEngine.UI;
 [ExecuteInEditMode()]
 public class ProgressBar : MonoBehaviour
 {
-    public int minimum;
-    public int maximum;
-    public int current;
+    public float minimum = 0;
+    public float maximum = 60;
+    public float current;
     public Image mask;
-    float changePerSecond;
-    public float timeToChange = 60;
+    public float changePerSecond = -1;
+    
 
 
     // Start is called before the first frame update
     public void Start()
     {
        
-            changePerSecond = (minimum - maximum) / timeToChange;
+           
     }
 
     // Update is called once per frame
     void Update()
     {
         GetCurrentFill ();
+
+        current = Mathf.Clamp(current + changePerSecond * Time.deltaTime, minimum, maximum);
 
 
         if (current <= 0)
