@@ -12,6 +12,7 @@ TagManager:
   - trashcan
   - BackWall
   - PipeWall
+  - paper bit
   layers:
   - Default
   - TransparentFX
