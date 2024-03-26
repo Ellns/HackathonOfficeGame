@@ -34,6 +34,8 @@ public class ProgressBar : MonoBehaviour
         if (current >= 100)
         {
             SceneManager.LoadScene("Main Menu");
+
+
         }
 
 
