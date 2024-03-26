@@ -908,8 +908,29 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 743f6f8de545d304d94ae6f0e5faedf5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 243876106}
   m_SourcePrefab: {fileID: 100100000, guid: 743f6f8de545d304d94ae6f0e5faedf5, type: 3}
+--- !u!1 &243876105 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 743f6f8de545d304d94ae6f0e5faedf5, type: 3}
+  m_PrefabInstance: {fileID: 243876104}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &243876106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243876105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a4c279bdda1b7446b7b9f35a2d87167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  workPoints: 0
 --- !u!4 &245798542 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2843745011146721013, guid: a82ab613de593e2439b710b4ce1813b9, type: 3}
@@ -1251,11 +1272,79 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44a24301f26c19c439e5ce80e53d5228, type: 3}
+--- !u!114 &286115063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1894687363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 997c874fff21f36439c8042000d99ccc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  workPoints: 0
+  yellowButton: {fileID: 0}
+  redButton: {fileID: 0}
+  greenButton: {fileID: 0}
+  yellowPress: 0
+  redPress: 0
+  greenPress: 0
 --- !u!4 &298736059 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2843745011146720971, guid: a82ab613de593e2439b710b4ce1813b9, type: 3}
   m_PrefabInstance: {fileID: 1742264883}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &322300973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1894687361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactableView: {fileID: 1894687360}
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1894687370}
+        m_TargetAssemblyTypeName: PrinterFunction, Assembly-CSharp
+        m_MethodName: redButtonPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &351295740
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6504,8 +6593,208 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7079612695331858313, guid: fdada56385bf1304cac3b236e2b2bed9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1894687370}
+    - targetCorrespondingSourceObject: {fileID: 3352586257819741031, guid: fdada56385bf1304cac3b236e2b2bed9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 286115063}
+    - targetCorrespondingSourceObject: {fileID: 8106488717008984737, guid: fdada56385bf1304cac3b236e2b2bed9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1894687372}
+    - targetCorrespondingSourceObject: {fileID: 2013725529408587761, guid: fdada56385bf1304cac3b236e2b2bed9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1894687371}
+    - targetCorrespondingSourceObject: {fileID: 7598868386421109646, guid: fdada56385bf1304cac3b236e2b2bed9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 322300973}
   m_SourcePrefab: {fileID: 100100000, guid: fdada56385bf1304cac3b236e2b2bed9, type: 3}
+--- !u!114 &1894687360 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5158045475358429970, guid: fdada56385bf1304cac3b236e2b2bed9, type: 3}
+  m_PrefabInstance: {fileID: 1894687359}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1894687361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 317e663e2bb60ea408fe22b908b59295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1894687361 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7598868386421109646, guid: fdada56385bf1304cac3b236e2b2bed9, type: 3}
+  m_PrefabInstance: {fileID: 1894687359}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1894687362 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1749076996800941034, guid: fdada56385bf1304cac3b236e2b2bed9, type: 3}
+  m_PrefabInstance: {fileID: 1894687359}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1894687363 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3352586257819741031, guid: fdada56385bf1304cac3b236e2b2bed9, type: 3}
+  m_PrefabInstance: {fileID: 1894687359}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1894687364 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7080455754212007428, guid: fdada56385bf1304cac3b236e2b2bed9, type: 3}
+  m_PrefabInstance: {fileID: 1894687359}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1894687365 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6723314759107961643, guid: fdada56385bf1304cac3b236e2b2bed9, type: 3}
+  m_PrefabInstance: {fileID: 1894687359}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1894687366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 317e663e2bb60ea408fe22b908b59295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1894687366 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2013725529408587761, guid: fdada56385bf1304cac3b236e2b2bed9, type: 3}
+  m_PrefabInstance: {fileID: 1894687359}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1894687367 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4720172392589265153, guid: fdada56385bf1304cac3b236e2b2bed9, type: 3}
+  m_PrefabInstance: {fileID: 1894687359}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1894687368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 317e663e2bb60ea408fe22b908b59295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1894687368 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8106488717008984737, guid: fdada56385bf1304cac3b236e2b2bed9, type: 3}
+  m_PrefabInstance: {fileID: 1894687359}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1894687369 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7079612695331858313, guid: fdada56385bf1304cac3b236e2b2bed9, type: 3}
+  m_PrefabInstance: {fileID: 1894687359}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1894687370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1894687369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 997c874fff21f36439c8042000d99ccc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  workPoints: 0
+  yellowButton: {fileID: 1894687363}
+  redButton: {fileID: 1894687364}
+  greenButton: {fileID: 1894687362}
+  yellowPress: 0
+  redPress: 0
+  greenPress: 0
+--- !u!114 &1894687371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1894687366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactableView: {fileID: 1894687365}
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1894687370}
+        m_TargetAssemblyTypeName: PrinterFunction, Assembly-CSharp
+        m_MethodName: greenButtonPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1894687372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1894687368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactableView: {fileID: 1894687367}
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1894687370}
+        m_TargetAssemblyTypeName: PrinterFunction, Assembly-CSharp
+        m_MethodName: yellowButtonPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewAdded:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelectingInteractorViewRemoved:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &1901153892 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f789658bfee12104aab4ea7d4b85b373, type: 3}
