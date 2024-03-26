@@ -15,7 +15,7 @@ public class ProgressBar : MonoBehaviour
     public int current;
     public Image mask;
     float changePerSecond;
-    public float timeToChange = 100;
+    public float timeToChange = 60;
 
 
     // Start is called before the first frame update
@@ -31,10 +31,10 @@ public class ProgressBar : MonoBehaviour
         GetCurrentFill ();
 
 
-        if (current >= 100)
+        if (current <= 0)
         {
             SceneManager.LoadScene("Main Menu");
-
+            Debug.Log("you loose");
 
         }
 

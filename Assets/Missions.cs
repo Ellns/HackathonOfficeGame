@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+using UnityEngine.SceneManagement;
+
 public class Missions : MonoBehaviour
 {
     public bool Keyboard = false;
@@ -33,6 +35,16 @@ public class Missions : MonoBehaviour
         if (Keyboard == true && Printer == true && Folder == true)
         {
             Debug.Log("you win and everything works");
+        }
+    }
+
+    public void jobDone()
+    {
+
+        if(workPoints == 9)
+        {
+            SceneManager.LoadScene(0);
+            Debug.Log("you win");
         }
     }
 }
