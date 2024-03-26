@@ -41,6 +41,7 @@ public class PrinterFunction : MonoBehaviour
             Missions.missions.updatePoints();
             Debug.Log("it works");
             spawn();
+            KeyBoardFunction.keyboard.keysPressed = 0f;
         }
 
     }
