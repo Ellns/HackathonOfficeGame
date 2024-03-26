@@ -8,6 +8,8 @@ public class Missions : MonoBehaviour
     public bool Keyboard = false;
     public bool Printer = false;
     public bool Folder = false;
+    public float happiness = 100f;
+    public static Missions missions;
 
     private void Update()
     {
