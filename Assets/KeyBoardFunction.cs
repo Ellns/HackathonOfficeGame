@@ -5,17 +5,27 @@ using UnityEngine;
 public class KeyBoardFunction : MonoBehaviour
 {
     public int workPoints;
-    
+    public float keysPressed = 0f;
 
-    private void OnTriggerEnter(Collider other)
+
+    private void OnTriggerExit(Collider other)
     {
-        if (Missions.missions.Printer == false && Missions.missions.Folder == false)
+
+        keysPressed++;
+
+       
+
+    }
+
+    public void completion()
+    {
+        if(keysPressed == 20 && Missions.missions.Printer == false && Missions.missions.Folder == false)
         {
-            Missions.missions.Keyboard = true;
+           Missions.missions.Keyboard = true;
             workPoints += 1;
             Missions.missions.updatePoints();
         }
-
     }
+  
 
 }

@@ -10,10 +10,13 @@ public class FolderFunction : MonoBehaviour
     {
         if(other.tag == "paper")
         {
-            Missions.missions.Printer = true;
+            Missions.missions.Printer = false;
+            Missions.missions.Folder = false;
+            Missions.missions.Keyboard = false;
             workPoints += 1;
             Missions.missions.updatePoints();
             Debug.Log("it works");
+
 
         }
     }

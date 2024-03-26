@@ -20,28 +20,7 @@ public class Missions : MonoBehaviour
     {
         updatePoints();
     }
-    private void Update()
-    {
-        if (Keyboard == false && Printer == false && Folder == false)
-        {
-            Debug.Log("you loose");
-        }
-
-        if (Keyboard == true && Printer == false && Folder == false)
-        {
-            Debug.Log("keyboard works");
-        }
-
-        if (Keyboard == true && Printer == true && Folder == false)
-        {
-            Debug.Log("printer works");
-        }
-
-        if (Keyboard == true && Printer == true && Folder == true)
-        {
-            Debug.Log("you win and everything works");
-        }
-    }
+    
 
     public void updatePoints()
     {
