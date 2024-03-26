@@ -41,8 +41,13 @@ public class BirdGameManager : MonoBehaviour
     {
         score++;
         scoreUI.SetText(score.ToString());
-        Missions.missions.happiness += 5f;
-        Debug.Log("added happiness");
+      
+        if (Missions.missions.happiness <= 100)
+        {
+            Missions.missions.happiness += 5f;
+            Debug.Log("added happiness");
+        }
+        
     }
 
 
@@ -64,6 +69,7 @@ public class BirdGameManager : MonoBehaviour
         ToggleSpawner();
         DestroyWall = false;
         dead = false;
+
         }
 
 
