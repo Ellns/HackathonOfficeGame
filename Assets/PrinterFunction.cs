@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PrinterFunction : MonoBehaviour
 {
-    public int workPoints;
+    
     public GameObject yellowButton;
     public GameObject redButton;
     public GameObject greenButton;
@@ -16,35 +16,42 @@ public class PrinterFunction : MonoBehaviour
     public GameObject paper;
     [SerializeField] private Transform destination;
 
+    
 
     public void yellowButtonPressed()
     {
         yellowPress = true;
         Missions.missions.playing = false;
+        complete();
     }
 
     public void redButtonPressed()
     {
         redPress = true;
         Missions.missions.playing = false;
+        complete();
     }
 
     public void greenButtonPressed()
     {
         greenPress = true;
         Missions.missions.playing = false;
+        complete();
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void complete()
     {
-        if (Missions.missions.Keyboard == true && Missions.missions.Folder == false && yellowPress == true && redPress == true && greenPress == true)
+        if (Missions.missions.Keyboard == true && yellowPress == true && redPress == true && greenPress == true)
         {
             Missions.missions.Printer = true;
-            workPoints += 1;
+            Missions.missions.workPoints++;
             Missions.missions.updatePoints();
             Debug.Log("it works");
             spawn();
             KeyBoardFunction.keyboard.keysPressed = 0f;
+            yellowPress = false;
+            redPress = false;
+            greenPress = false;
         }
 
     }
@@ -52,6 +59,7 @@ public class PrinterFunction : MonoBehaviour
     private void spawn()
     {
         Instantiate(paper, destination);
+        Debug.Log("paper spawned");
         
     }
 }

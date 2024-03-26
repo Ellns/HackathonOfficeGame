@@ -19,11 +19,17 @@ public class Missions : MonoBehaviour
 
     private void Start()
     {
+        if (missions == null) //initialises the mission class so that mission functions can be called through Mission.mission
+        {
+            missions = this;
+
+        }
         updatePoints();
         Keyboard = false;
         Printer = false;
         Folder = false;
     }
+
     
 
     public void updatePoints()
