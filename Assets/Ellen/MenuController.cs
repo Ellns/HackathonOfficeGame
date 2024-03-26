@@ -6,15 +6,18 @@ using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
-    public void StartButton()
-    {
-        SceneManager.LoadScene("Main Scene");
-    }
 
-    public void ExitButton()
-    {
+        public void StartButton()
+        {
+            SceneManager.LoadScene("Main Scene");
+        }
 
-        Application.Quit();
+        public void ExitButton()
+        {
 
-    }
+            Application.Quit();
+
+        }
+
+    
 }
