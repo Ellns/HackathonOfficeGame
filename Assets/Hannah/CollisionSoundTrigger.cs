@@ -15,8 +15,8 @@ public class CollisionSoundTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        // Check if the entering collider is tagged as "Player"
-        if (other.CompareTag("Player") && !hasTriggered)
+        // Check if the entering collider is tagged as "Paper"
+        if (other.CompareTag("Paper") && !hasTriggered)
         {
             // Play sound
             if (audioSource != null && triggerSound != null)
