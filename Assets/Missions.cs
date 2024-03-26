@@ -5,30 +5,30 @@ using UnityEngine.UI;
 
 public class Missions : MonoBehaviour
 {
-    public bool Mission1 = false;
-    public bool Mission2 = false;
-    public bool Mission3 = false;
+    public bool Keyboard = false;
+    public bool Printer = false;
+    public bool Folder = false;
 
     private void Update()
     {
-        if (Mission1 == false && Mission2 == false && Mission3 == false)
+        if (Keyboard == false && Printer == false && Folder == false)
         {
             Debug.Log("you loose");
         }
 
-        if (Mission1 == true && Mission2 == false && Mission3 == false)
+        if (Keyboard == true && Printer == false && Folder == false)
         {
-            Debug.Log("you loose");
+            Debug.Log("keyboard works");
         }
 
-        if (Mission1 == true && Mission2 == true && Mission3 == false)
+        if (Keyboard == true && Printer == true && Folder == false)
         {
-            Debug.Log("you loose");
+            Debug.Log("printer works");
         }
 
-        if (Mission1 == true && Mission2 == true && Mission3 == true)
+        if (Keyboard == true && Printer == true && Folder == true)
         {
-            Debug.Log("you win");
+            Debug.Log("you win and everything works");
         }
     }
 }
