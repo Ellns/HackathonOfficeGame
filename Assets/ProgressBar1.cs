@@ -8,21 +8,21 @@ using UnityEngine.UI;
 // Video Tutorial https://www.youtube.com/watch?v=J1ng1zA3-Pk
 
 [ExecuteInEditMode()]
-public class ProgressBar : MonoBehaviour
+public class ProgressBar1 : MonoBehaviour
 {
-    public int minimum;
-    public int maximum;
-    public int current;
+    public float minimum;
+    public float maximum;
+    public float current;
     public Image mask;
-    float changePerSecond;
-    public float timeToChange = 60;
+    
+    
 
 
     // Start is called before the first frame update
     public void Start()
     {
             
-            changePerSecond = (minimum - maximum) / timeToChange;
+            
     }
 
     // Update is called once per frame
@@ -33,9 +33,7 @@ public class ProgressBar : MonoBehaviour
 
         if (current <= 0)
         {
-            SceneManager.LoadScene("Main Menu");
-            Debug.Log("you loose");
-
+           
         }
 
 
@@ -49,7 +47,6 @@ public class ProgressBar : MonoBehaviour
         float fillAmount = currentOffset / maximumOffset;
         mask.fillAmount = fillAmount;
     }
-
     
 
 }
