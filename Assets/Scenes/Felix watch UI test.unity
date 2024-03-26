@@ -327,6 +327,63 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 731719957}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &886660608
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5172171529007388957, guid: 8d2783606c3d61648bd0ffd1052b9387, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.6675
+      objectReference: {fileID: 0}
+    - target: {fileID: 5172171529007388957, guid: 8d2783606c3d61648bd0ffd1052b9387, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.4437
+      objectReference: {fileID: 0}
+    - target: {fileID: 5172171529007388957, guid: 8d2783606c3d61648bd0ffd1052b9387, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.07709114
+      objectReference: {fileID: 0}
+    - target: {fileID: 5172171529007388957, guid: 8d2783606c3d61648bd0ffd1052b9387, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.8433915
+      objectReference: {fileID: 0}
+    - target: {fileID: 5172171529007388957, guid: 8d2783606c3d61648bd0ffd1052b9387, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5172171529007388957, guid: 8d2783606c3d61648bd0ffd1052b9387, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5172171529007388957, guid: 8d2783606c3d61648bd0ffd1052b9387, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.53729963
+      objectReference: {fileID: 0}
+    - target: {fileID: 5172171529007388957, guid: 8d2783606c3d61648bd0ffd1052b9387, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 5172171529007388957, guid: 8d2783606c3d61648bd0ffd1052b9387, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 5172171529007388957, guid: 8d2783606c3d61648bd0ffd1052b9387, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 115
+      objectReference: {fileID: 0}
+    - target: {fileID: 5516045562361643943, guid: 8d2783606c3d61648bd0ffd1052b9387, type: 3}
+      propertyPath: m_Name
+      value: OfficeUIWatchFinal
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8d2783606c3d61648bd0ffd1052b9387, type: 3}
 --- !u!1 &945645622
 GameObject:
   m_ObjectHideFlags: 0
@@ -593,3 +650,4 @@ SceneRoots:
   - {fileID: 164302688}
   - {fileID: 945645623}
   - {fileID: 731719958}
+  - {fileID: 886660608}
