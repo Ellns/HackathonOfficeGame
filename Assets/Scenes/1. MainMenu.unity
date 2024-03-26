@@ -1628,6 +1628,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: -4340759925879698287, guid: 1ae1428345fef0b4597b7d5b9972e03f, type: 2}
+    - target: {fileID: 7201690441006298923, guid: 433687663147e594ab8f642a904c74b6, type: 3}
+      propertyPath: _whenRelease.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7604810475940913571, guid: 433687663147e594ab8f642a904c74b6, type: 3}
       propertyPath: m_Name
       value: Settings
