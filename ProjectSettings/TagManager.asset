@@ -12,6 +12,7 @@ TagManager:
   - trashcan
   - BackWall
   - PipeWall
+  - Folder
   layers:
   - Default
   - TransparentFX
