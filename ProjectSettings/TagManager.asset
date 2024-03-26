@@ -12,7 +12,6 @@ TagManager:
   - trashcan
   - BackWall
   - PipeWall
-  - paper bit
   - ground
   layers:
   - Default

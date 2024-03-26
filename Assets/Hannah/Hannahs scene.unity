@@ -211,10 +211,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 91462980}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d52ff7a41bc99f41a1ec50f568555cf, type: 3}
+  m_Script: {fileID: 11500000, guid: df6a5c40277588f46a6ed2617b971523, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Crumble: {fileID: 1511506490}
+  pingPong: {fileID: 1511506490}
+  timer: 0
+  interval: 0
+  noCoolDown: 0
+  noExitingBall: 0
+  numberOfBallsInSpawner: 0
 --- !u!4 &91462982
 Transform:
   m_ObjectHideFlags: 0
@@ -224,7 +229,7 @@ Transform:
   m_GameObject: {fileID: 91462980}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.29564756, y: 1.4570436, z: 0.8922099}
+  m_LocalPosition: {x: 0.177, y: 1.124, z: 0.431}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
