@@ -38,6 +38,7 @@ public class PrinterFunction : MonoBehaviour
         {
             Missions.missions.Printer = true;
             workPoints += 1;
+            Missions.missions.updatePoints();
             Debug.Log("it works");
             spawn();
         }
