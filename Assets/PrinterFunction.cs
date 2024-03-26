@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Meta.WitAi.Windows;
 using UnityEngine;
 
 public class PrinterFunction : MonoBehaviour
@@ -12,6 +13,8 @@ public class PrinterFunction : MonoBehaviour
     public bool yellowPress = false;
     public bool redPress = false;
     public bool greenPress = false;
+    public GameObject paper;
+    [SerializeField] private Transform destination;
 
 
     public void yellowButtonPressed()
@@ -36,7 +39,14 @@ public class PrinterFunction : MonoBehaviour
             Missions.missions.Printer = true;
             workPoints += 1;
             Debug.Log("it works");
+            spawn();
         }
 
+    }
+
+    private void spawn()
+    {
+        Instantiate(paper, destination);
+        
     }
 }
