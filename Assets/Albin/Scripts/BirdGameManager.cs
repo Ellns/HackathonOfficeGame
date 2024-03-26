@@ -15,6 +15,7 @@ public class BirdGameManager : MonoBehaviour
     public bool DestroyWall = false;
     public TextMeshProUGUI scoreUI;
     public TextMeshProUGUI gameOver;
+    public bool dead = false;
 
     // Start is called before the first frame update
     void Awake()
@@ -33,12 +34,7 @@ public class BirdGameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R)) //this should be changed to tap the phone screen, same as jump
-        {
-            Restart();
-
-        }
-        
+        //if (Input.GetKeyDown(KeyCode.R)) //this should be changed to tap the phone screen, same as jump
     }
 
     public void IncrementScore()
@@ -47,9 +43,14 @@ public class BirdGameManager : MonoBehaviour
         scoreUI.SetText(score.ToString());
     }
 
+
+
     public void Restart()
     {
+        if (dead == true)
+        {
 
+        
         score = 0;
         scoreUI.SetText(score.ToString());
         gameOver.SetText("");
@@ -60,6 +61,8 @@ public class BirdGameManager : MonoBehaviour
         birdScript.BirdJump();
         ToggleSpawner();
         DestroyWall = false;
+        dead = false;
+        }
 
 
     }
@@ -77,5 +80,6 @@ public class BirdGameManager : MonoBehaviour
         birdScript.ToggleGravity();
         DestroyWall = true;
         gameOver.SetText("GAME OVER     tap to play again");
+        dead = true;
     }
 }
