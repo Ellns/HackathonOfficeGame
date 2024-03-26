@@ -13,6 +13,7 @@ TagManager:
   - BackWall
   - PipeWall
   - paper bit
+  - ground
   layers:
   - Default
   - TransparentFX
