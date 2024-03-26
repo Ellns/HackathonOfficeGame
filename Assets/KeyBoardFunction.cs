@@ -16,7 +16,8 @@ public class KeyBoardFunction : MonoBehaviour
         keysPressed++;
         keynumber.SetText(keysPressed.ToString());
         Debug.Log("you did it");
-       
+        Missions.missions.playing = false;
+
 
     }
 

@@ -20,16 +20,19 @@ public class PrinterFunction : MonoBehaviour
     public void yellowButtonPressed()
     {
         yellowPress = true;
+        Missions.missions.playing = false;
     }
 
     public void redButtonPressed()
     {
         redPress = true;
+        Missions.missions.playing = false;
     }
 
     public void greenButtonPressed()
     {
         greenPress = true;
+        Missions.missions.playing = false;
     }
 
     private void OnTriggerEnter(Collider other)

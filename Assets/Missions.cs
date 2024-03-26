@@ -15,27 +15,29 @@ public class Missions : MonoBehaviour
     public static Missions missions;
     public int workPoints = 0;
     public TextMeshProUGUI workPointsUI;
+    public bool playing = false;
 
     private void Start()
     {
         updatePoints();
+        Keyboard = false;
+        Printer = false;
+        Folder = false;
     }
     
 
     public void updatePoints()
     {
         workPointsUI.SetText(workPoints.ToString());
-    }
 
-    public void jobDone()
-    {
-
-        if(workPoints == 9)
+        if (workPoints == 9)
         {
             SceneManager.LoadScene(0);
             Debug.Log("you win");
         }
     }
+
+   
 
 
 }

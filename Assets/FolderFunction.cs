@@ -16,6 +16,7 @@ public class FolderFunction : MonoBehaviour
             workPoints += 1;
             Missions.missions.updatePoints();
             Debug.Log("it works");
+            Missions.missions.playing = false;
 
 
         }
