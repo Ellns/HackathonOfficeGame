@@ -2554,11 +2554,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2873135404632450497, guid: 2cf860be1ddddec44bf5ef9f66f37570, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.564
+      value: 1.563
       objectReference: {fileID: 0}
     - target: {fileID: 2873135404632450497, guid: 2cf860be1ddddec44bf5ef9f66f37570, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.07
+      value: 1.063
       objectReference: {fileID: 0}
     - target: {fileID: 2873135404632450497, guid: 2cf860be1ddddec44bf5ef9f66f37570, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6814,6 +6814,7 @@ MonoBehaviour:
   workPoints: 0
   workPointsUI: {fileID: 1061364790}
   playing: 0
+  youWin: 0
 --- !u!4 &1614506638
 Transform:
   m_ObjectHideFlags: 0
