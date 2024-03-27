@@ -16,6 +16,7 @@ public class Missions : MonoBehaviour
     public int workPoints = 0;
     public TextMeshProUGUI workPointsUI;
     public bool playing = false;
+    public bool youWin = false;
 
     private void Start()
     {
@@ -38,7 +39,7 @@ public class Missions : MonoBehaviour
 
         if (workPoints == 9)
         {
-            SceneManager.LoadScene(0);
+            youWin = true;
             Debug.Log("you win");
         }
     }
