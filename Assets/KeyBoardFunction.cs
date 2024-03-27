@@ -10,14 +10,17 @@ public class KeyBoardFunction : MonoBehaviour
     public static KeyBoardFunction keyboard;
     public TextMeshProUGUI keynumber;
 
-    private void OnTriggerExit(Collider other)
+    public void keyPress()
     {
-
-        keysPressed++;
-        keynumber.SetText(keysPressed.ToString());
-        Debug.Log("you did it");
-        Missions.missions.playing = false;
-        completion();
+        if(!Missions.missions.Keyboard) //if keyboard is false
+        {
+            keysPressed++;
+            keynumber.SetText(keysPressed.ToString());
+            Debug.Log("you did it");
+            Missions.missions.playing = false;
+            completion();
+        }
+        
 
     }
 
